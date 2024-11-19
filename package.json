@@ -1,0 +1,27 @@
+{
+  "name": "nodejs_express_mongo_",
+  "version": "1.0.0",
+  "description": "Laboratorio API REST con MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamiloMoreno-17/NodeJS_Express_Mongo_.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "Mongo",
+    "API",
+    "REST",
+    "Backend"
+  ],
+  "author": "Camilo Moreno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamiloMoreno-17/NodeJS_Express_Mongo_/issues"
+  },
+  "homepage": "https://github.com/CamiloMoreno-17/NodeJS_Express_Mongo_#readme"
+}
