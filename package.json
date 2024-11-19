@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/CamiloMoreno-17/NodeJS_Express_Mongo_/issues"
   },
-  "homepage": "https://github.com/CamiloMoreno-17/NodeJS_Express_Mongo_#readme"
+  "homepage": "https://github.com/CamiloMoreno-17/NodeJS_Express_Mongo_#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
 }
