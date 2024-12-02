@@ -3,9 +3,13 @@ const Curso = require('../models/curso_model');
 const ruta = express.Router();
 
 ruta.get('/', (req,res)=>{
-    res.json('Respuesta a peticion GET de Cursos Funcionando correctamente...')
+    let resultado = listarCursosActivos();
+    resultado.then(cursos => {
+        res.json(cursos);
+    }).catch(err => {
+        res.status(400).json(err);
+    })
 });
-
 
 
 // Endpoint de tipo POST para el recurso CURSOS
@@ -74,6 +78,12 @@ async function desactivarCurso(id) {
         }
     }, {new: true});
     return curso;
+}
+
+//Funcion asincronica para listar los cursos activos
+async function listarCursosActivos () {
+    let cursos = await Curso.find ({"estado:": true});
+    return cursos;
 }
 
 module.exports = ruta;
